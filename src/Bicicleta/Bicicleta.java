@@ -22,11 +22,17 @@ public class Bicicleta {
 
     public double calcAreaTotal() {
         double area = 0;
-        for (FiguraGeometrica fg : fgs) 
+        for (FiguraGeometrica fg : fgs) {
             area += fg.calcArea();
-        
+        }
+
         System.out.println("Area Total: " + area);
         return area;
+    }
+
+    @Override
+    public String toString() {
+        return "Bicicleta {" + "numfgs=" + numfgs + "fgs=" + fgs + '}';
     }
 
 }
